@@ -1,21 +1,37 @@
-# v0 sandbox internal files
-__v0_runtime_loader.js
-__v0_devtools.tsx
-__v0_jsx-dev-runtime.ts
-.snowflake/
-.design-cache/
-.v0-trash/
-.vercel/
+cat >> .gitignore <<'EOF'
 
-# Environment variables
-.env*.local
+# Local archives and backups
+*.zip
+*.backup
 
-# Common ignores
-node_modules
-.next/
-.DS_Store
+# Environment files
 .env
-.env.local
-.env.*.local
-*.log
-.DS_Store
+.env.*
+!.env.example
+
+# Python
+.venv/
+__pycache__/
+.pytest_cache/
+
+# Build output
+.next/
+node_modules/
+EOF
+# Local archives and backups
+*.zip
+*.backup
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+__pycache__/
+.pytest_cache/
+
+# Build output
+.next/
+node_modules/
